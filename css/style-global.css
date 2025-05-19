@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --light-blue: #1877f7;
+  --beige: #f7f0e5;
+  --dark-blue: #0352bd;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue);
+  border-radius: 50px;
+}
+body {
+  position: relative;
+}
+.fonte-especial {
+  font-family: "Beth Ellen", cursive;
+}
+.icons-fixed {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  z-index: 2;
+  left: 20px;
+  bottom: 50px;
+  font-family: "Poppins";
+  color: var(--dark-blue);
+}
+.icons-fixed i {
+  font-size: 40px;
+  background-color: var(--white);
+  padding: 1px 2px;
+  border-radius: 5px;
+}
+.icons-fixed p {
+  display: none;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 1px 2px;
+  font-weight: 500;
+}
+.icon-fixed-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.icon-fixed-item:hover p {
+  display: block;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+} /*inclui o container do header e footer*/
+.container nav ul {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+}
+.container nav ul li:hover {
+  font-weight: 500;
+}
+header {
+  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+header .logo img {
+  width: 50px;
+}
+header .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logo h1 {
+  font-size: 25px;
+  color: var(--beige);
+}
+header .container nav {
+  display: flex;
+}
+footer {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+footer i {
+  margin-right: 3px;
+}
+footer .logo-footer {
+  max-width: 100px;
+}
+footer .container h4 {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+footer .informacoes-contatos,
+.informacoes {
+  width: 200px;
+}
+footer .institucional-subtitulo {
+  text-decoration: underline;
+}
+footer .fonte-especial {
+  font-weight: 200;
+}
+footer .container ul {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+}
+footer .container .list-pagamentos {
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+footer .container .list-pagamentos li {
+  max-width: 120px;
+  text-align: justify;
+  border: 1px solid var(--light-blue);
+  padding: 10px;
+}
+footer .text-rodape-bottom .container {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 20px;
+  font-weight: 200;
+  font-size: small;
+}
+footer .text-rodape-bottom::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+}

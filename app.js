@@ -18,24 +18,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const hamburguer = document.querySelector(".hamburger");
-const menu_hamburguer = document.querySelector(".menu-hamburguer");
+const menuHamburguer = document.querySelector(".menu-hamburguer");
 
 function toggleMenu() {
   const isActive = hamburguer.classList.contains("is-active");
-  menu_hamburguer.style.display = isActive ? "block" : "none";
+  menuHamburguer.style.display = isActive ? "block" : "none";
 }
 hamburguer.addEventListener("click", () => {
   hamburguer.classList.toggle("is-active");
   toggleMenu();
 });
 
-const informacoes_site = document.querySelector(".informacoes-site h4");
-const infors_container = document.querySelector(".infors");
-informacoes_site.addEventListener("click", () => {
-  infors_container.style.display = "block";
+const informacoesSite = document.querySelector(".informacoes-site h4");
+const inforsContainer = document.querySelector(".infors");
+
+informacoesSite.addEventListener("click", () => {
+  inforsContainer.style.display = "block";
 });
  function institucionalButton() {
-        infors_container.style.display = "none";
+        inforsContainer.style.display = "none";
     }
 
 window.addEventListener("scroll", () => {
@@ -51,8 +52,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let radioS = document.querySelectorAll(".nav-produtos input");
-let produtos = document.querySelectorAll(".produtos-container .produtos");
+const radioS = document.querySelectorAll(".nav-produtos input");
+const produtos = document.querySelectorAll(".produtos-container .produtos");
 
 radioS.forEach((radio) => {
   radio.addEventListener("change", function () {

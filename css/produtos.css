@@ -21,8 +21,8 @@
 input[type="radio"] {
   display: none;
 }
-main{
-  height: 100vh;
+main .produtos-container{
+min-height: 100vh;
 }
 main .produtos {
   display: flex;

@@ -32,17 +32,17 @@ header .container nav .hamburger {
     max-width: 50%;
   }
 }
-.paragrafo_natal-rn-responsivo{
+.paragrafo_natal-rn-responsivo {
   display: none;
 }
 @media (max-width: 425px) {
   header .logo h1 {
     font-size: 15px;
   }
-  .paragrafo_natal-rn-responsivo{
+  .paragrafo_natal-rn-responsivo {
     display: block;
   }
-  .paragrafo_natal-rn{
+  .paragrafo_natal-rn {
     display: none;
   }
 }
@@ -53,5 +53,4 @@ header .container nav .hamburger {
 }
 main .container .text-CTA {
   max-width: 300px;
-  background-color: rebeccapurple;
 }

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hoverpause: false,
     rewind: true,
     animationDuration: 800,
-    gap: 20,
+    gap: 0,
     breakpoints: {
       768: { perView: 2 },
       500: { perView: 1 },
@@ -81,7 +81,7 @@ document
   .querySelector(".nav-produtos input:checked")
   ?.dispatchEvent(new Event("change"));
 
-  ScrollReveal().reveal(".hero-container", {
+ScrollReveal().reveal(".hero-container", {
   origin: "left",
   duration: 3000,
   distance: "20%",

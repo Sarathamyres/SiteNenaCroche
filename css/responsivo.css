@@ -11,38 +11,68 @@ header .container nav .hamburger {
   .hero .container {
     background-size: 100%;
   }
+  .hero .hero-container {
+    background-size: 80%;
+  }
 }
-@media (max-width: 768px) {
-  header .container nav ul {
+.button-help-responsivo {
+  display: none;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .button-help {
     display: none;
   }
-  header .container nav .hamburger,
+  .button-help-responsivo {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header .container .menu .menu-list {
+    display: none;
+  }
+  header .container .menu .hamburger,
   .menu-hamburguer {
     display: block;
   }
-  .informacoes-hero-bottom p {
+  header .button-help {
     display: none;
   }
-  main .container .faixa-subtitle {
-    font-size: 15px;
+  .information-hero-bottom p {
+    display: none;
+  }
+  .hero {
+    height: 70vh;
+  }
+  .hero .hero-container {
+    background-size: 100%;
+  }
+  main .container1 .img-main {
+    width: 300px;
+  }
+  main .container .range-subtitle {
+    font-size: 1.5rem;
+  }
+  main .container1 .subcontainer {
+    width: 100%;
+    min-width: 300px;
   }
 }
 @media (max-width: 460px) {
-  .sobre-mim img {
+  .about-me img {
     max-width: 50%;
   }
 }
-.paragrafo_natal-rn-responsivo {
+.paragraph-natal-rn-responsivo {
   display: none;
 }
 @media (max-width: 425px) {
   header .logo h1 {
     font-size: 15px;
   }
-  .paragrafo_natal-rn-responsivo {
+  .paragraph-natal-rn-responsivo {
     display: block;
   }
-  .paragrafo_natal-rn {
+  .paragraph-natal-rn {
     display: none;
   }
 }
@@ -50,7 +80,4 @@ header .container nav .hamburger {
   header .logo h1 {
     display: none;
   }
-}
-main .container .text-CTA {
-  max-width: 300px;
 }

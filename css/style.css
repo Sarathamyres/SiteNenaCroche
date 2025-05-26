@@ -1,140 +1,163 @@
 .hero {
   background: url("../images/banner1.png") center/cover fixed;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
-  border-radius: 0 0 10px 10px;
 }
-.hero .container {
+.hero .hero-container {
   background: url("../images/banner-hover.png") no-repeat fixed;
   background-position: center 40%;
   background-size: 60%;
   height: 100%;
 }
-.informacoes-hero-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  text-align: start;
-  align-items: center;
-  padding: 20px;
-}
-.informacoes-hero-bottom div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px 0;
-  font-weight: 500;
-  color: var(--dark-blue);
-}
-.informacoes-hero-bottom div .div-icon {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-}
-.informacoes-hero-bottom .div-icon i {
-  padding: 10px;
-  border-radius: 50%;
-  color: var(--dark-blue);
-  border: 1px solid var(--dark-blue);
-}
 main .container {
   display: flex;
 }
 main .container1 {
-  display: flex;
+  background: url("../images/banner1.png") center/cover fixed;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
   text-align: justify;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   color: var(--black);
-  padding: 20px;
   overflow: hidden;
-  margin: 0 auto;
+  min-height: 100vh;
+  height: auto;
 }
 main .container1 .img-main {
-  width: 300px;
+  width: 400px;
   overflow: hidden;
-}
-main .container1 .text-CTA {
-  max-width: 500px;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-main .text-CTA .line {
-  width: 100%;
-  height: 3px;
-  background-color: var(--light-blue);
-}
-main .text-CTA .fonte-especial {
-  color: var(--light-blue);
-  font-size: 16px;
-}
-main .text-CTA .cat-buttom {
-  max-width: 99%;
-  min-width: 99%;
-}
-main .text-CTA .call-of-action {
-  margin: 0 auto;
-}
-main .call-of-action {
-  text-align: center;
-  background-color: var(--dark-blue);
-  color: var(--white);
-  border: 2px solid var(--dark-blue);
-  font-size: 15px;
+  box-shadow: rgb(71, 71, 71) 0px 5px 20px 0px;
+  min-width: 300px;
   border-radius: 10px;
-  padding: 20px 10px;
-  cursor: pointer;
-  text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 4px;
 }
-main .call-of-action:hover {
-  background-color: var(--light-blue);
+main .container1 .subcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  width: 50%;
+  min-width: 700px;
+  border-radius: 10px;
 }
-main .call-of-action a /* texto buttom */ {
+main .container1 .card-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+main .subcontainer .card {
+  max-width: 300px;
+  height: 300px;
+  background-color: #eeeeef;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  box-shadow: rgb(71, 71, 71) 0px 5px 10px 0px;
+}
+main .card-one {
   display: flex;
   align-items: center;
+}
+main .subtitle-card-two {
+  text-align: start;
+  color: var(--dark-blue);
+}
+.card-two:not(h3) {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .subcontainer .card .box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .card .div-icon {
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
   text-align: center;
-  opacity: 0.8;
-  gap: 5px;
+}
+main .special-font {
+  color: var(--dark-blue);
+}
+main .button-cta /*div*/ {
+  display: flex;
+  justify-content: center;
+  max-width: calc(600px + 30px);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+main .link-button-cta {
+  max-width: 500px;
+  box-shadow: rgb(71, 71, 71) 0px 5px 20px 0px;
+  border-radius: 10px;
+}
+.cat-button /*button item*/ {
+  max-width: 100%;
 }
 main p {
   font-size: 16px;
   font-weight: 200;
 }
-main .container:last-child {
+main .container2 {
   background: url("../images/banner1.png") center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  gap: 50px;
   max-width: 100%;
+  padding: 30px 0;
   overflow: hidden;
+  height: auto;
 }
-main .container .faixa-subtitle {
+main .container .range-subtitle {
   width: 100%;
-  background-color: var(--white);
-  color: var(--dark-blue);
-  font-size: 2em;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  background-color: #eeeeef;
 }
-main .container .carrossel {
+.carrossel {
+  width: 90%;
+}
+.glide__slide {
+  width: 300px !important;
+  max-height: 400px;
+  flex-shrink: 0;
+}
+.glide__slide img {
   width: 100%;
-  margin: 30px 0;
-  overflow: hidden;
-}
-main .container .carrossel img {
-  max-width: 300px;
-  height: 300px;
-}
-main img {
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
-.main .container:last-child .call-of-action {
-  padding: 10px;
+main .call-of-action {
+  text-align: center;
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  border: 2px solid var(--dark-blue);
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  width: 200px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: rgba(13, 5, 5, 0.12) 0px 6px 4px;
+  transition: box-shadow 0.3s ease;
+}
+main .call-of-action:hover {
+  opacity: 0.9;
+  box-shadow: rgba(238, 236, 236, 0.12) 0px 6px 4px;
 }

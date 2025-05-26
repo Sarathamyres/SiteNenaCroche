@@ -12,11 +12,13 @@
   <link rel="stylesheet" href="css/style-global.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
   <link href="dist/hamburgers.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsivo.css">
   <link rel="stylesheet" href="css/menu-hamburguer.css">
   <link rel="icon" type="image/png" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/institucional.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Nena Crochê | Peças Artesanais </title>
 </head>
 
@@ -26,16 +28,26 @@
       <div class="logo">
         <a href="index.html">
           <img src="images/logo1.png" alt="">
-          <h1 class="fonte-especial">Nena Crochê</h1>
+          <h1 class="special-font titulo">Nena Crochê</h1>
         </a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="sobre.html">SOBRE</a></li>
-          <li><a href="produtos.html">PRODUTOS</a></li>
-          <li><a href="#contato">CONTATO</a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="sobre.html">SOBRE</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="produtos.html">PRODUTOS</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#contato">CONTATO</a>
           </li>
         </ul>
+        <button class="button-help buttonHelp">Quero comprar, como faço?
+        </button>
+        <button class="button-help-responsivo buttonHelp">
+          <i class="fa-solid fa-question"></i>
+        </button>
         <button class="hamburger hamburger--collapse" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -46,62 +58,109 @@
   </header>
   <nav class="menu-hamburguer">
     <div class="container">
-      <ul>
-        <li>
+      <ul class="menu-list">
+        <li class="menu-list-item">
           <a href="sobre.html">SOBRE</a>
         </li>
-        <li><a href="produtos.html">PRODUTOS</a></li>
-        <li><a href="#contato">CONTATO</a>
+        <li class="menu-list-item">
+          <a href="produtos.html">PRODUTOS</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#contato">CONTATO</a>
         </li>
       </ul>
+      <button class="button-help buttonHelp">Quero comprar, como faço?</button>
     </div>
   </nav>
   <section class="hero">
-    <div class="container"></div>
+    <div class="hero-container"></div>
   </section>
-  <section class="informacoes-hero-bottom">
-    <div class="envios">
-      <div class="div-icon"><i class="fa-solid fa-truck"></i></div>
-      <p>PARA TODO O BRASIL</p>
+  <section class="infors-compra">
+    <div class="container-subtitle">
+      <h2 class="subtititle">🧶 COMO ENCOMENDAR SEU CROCHÊ PERSONALIZADO
+      </h2>
+      <button class="button-for-hidden" onclick="popupButton()">X
+      </button>
     </div>
-    <div class="pagamentos">
-      <div class="div-icon"> <i class="fa-solid fa-credit-card"></i></div>
-      <p>CARTÃO OU PIX</p>
-    </div>
-    <div class="compras">
-      <div class="div-icon"><i class="fa-solid fa-bag-shopping"></i></div>
-      <p>COMPRE PELO WHATSAPP</p>
+    <p>Na Nena Crochê, cada peça é feita com carinho exclusivamnete para você! <span>Siga estes passos simples:</span>
+    </p>
+    <dl class="lista-infors-compra">
+      <dt><strong>ESCOLHA SUA PEÇA FAVORITA</strong></dt>
+      <dd>🖱 Navegue pela nossa galeria de produtos;</dd>
+      <dd>📌 Ou encontre inspiração no nosso Pinterest.
+        <a class="link-pinterest" href="" target="_blank"></a>
+      </dd>
+      <dt><strong>PERSONALISE DO SEU JEITO</strong></dt>
+      <dd>🎨 Nos mande <span class="dd-weight">cor</span> e <span>tamanho</span> de sua preferência (todas as peças são adaptáveis!).</dd>
+      <dd>💡 Tem uma ideia diferente? Envie sua referência!</dd>
+      <dt><strong>FINALIZE PELO WHATSAPP</strong>
+      </dt>
+      <dd>📲 Fale diretamente com a gente e tenha um atendimento personalizado;</dd>
+      <dd>✨ Envie o link ou da peça + suas preferências;</dd>
+      <dd>💬 Encontre a peça perfeita em nosso catálogo e clique no botão para ser atendido por nós via WhatsApp - rápido e fácil!</dd>
+      <dt><strong>COMPRE DE ONDE ESTIVER</strong>
+      </dt>
+      <dd>✈ As peças Nena Crochê chegam até você, simule seu frete com a gente pelo WhatsApp.</dd>
+    </dl>
     </div>
   </section>
   <main>
     <section class="icons-fixed">
-      <a class="icon-fixed-item" href="tel:+55 84 8856-3163" target="_blank">
+      <a class="icon-fixed-item phone-number" href="tel:+55 84 8856-3163" target="_blank">
         <i class="fa-brands fa-whatsapp fa-rotate-270"></i>
         <p>Fale conosco! 🐱🧶</p>
       </a>
-      <a class="icon-fixed-item" href="https://br.pinterest.com/search/pins/?q=croche&rs=typed" target="_blank">
+      <a class="icon-fixed-item pinterest" href="https://br.pinterest.com/search/pins/?q=croche&rs=typed" target="_blank">
         <i class="fa-brands fa-pinterest-p"></i>
         <p>Não achou a peça que procura? Dá uma olhadinha no Pinterest!🐱🧶</p>
       </a>
     </section>
-    <section class="container1">
-      <img class="img-main" src="images/imgs-produtos/bagEstrela.jpg" alt="Bag em formato de estrela feita em crochê - cores azul e branco - @nenacrochebr">
-      <div class="text-CTA">
-        <p>Na <span class="fonte-especial">Nena Crochê</span>, parte do valor de cada venda é usado para ajudar pets abandonados. Que tal garantir a sua peça artesanal e, ao mesmo tempo, fazer a diferença na vida de um bichinho de rua?
-        </p>
-        <hr class="line">
-        <a class="link-button-whatsApp" href="tel:+55 84 8856-3163" target="_blank"><img class="cat-buttom" src="images/cat-buttom.png" alt="button chamada para ação"></a>
+    <section class="container container1">
+      <div class="subcontainer">
+        <div class="card-cta">
+          <div class="card card-one">
+            <p class="card-paragraph">
+              Na <span class="special-font">Nena Crochê</span>, parte do valor de cada venda é usado para ajudar pets abandonados. Que tal garantir a sua peça artesanal e, ao mesmo tempo, fazer a diferença na vida de um bichinho de rua?
+            </p>
+          </div>
+          <div class="card card-two">
+            <h3 class="subtitle-card-two">Por que Comprar Conosco?</h3>
+            <div class="box shipping">
+              <div class="div-icon">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <p> ENVIAMOS PARA TODO O BRASIL</p>
+            </div>
+            <div class="box payments">
+              <div class="div-icon">
+                <i class="fa-solid fa-credit-card">
+                </i>
+              </div>
+              <p>PAGUE ONLINE COM CARTÃO OU PIX</p>
+            </div>
+            <div class="box shopping">
+              <div class="div-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+              <p>COMPRE PELO WHATSAPP</p>
+            </div>
+          </div>
+        </div>
+        <div class="button-cta">
+          <a class="link-button-cta" href="tel:+55 84 8856-3163" target="_blank">
+            <img class="cat-button" src="images/cat-buttom.png" alt="Button chamada para ação">
+          </a>
+        </div>
       </div>
+      <img class="img-main" src="images/imgs-produtos/bagBoho.jpg" alt="Bag em formato de estrela feita em crochê - cores azul e branco - @nenacrochebr">
     </section>
-    <section class="container">
-      <div class="faixa-subtitle">
-        <h2 class="fonte-especial">Confira alguns de nossos artesanatos</h2>
+    <section class="container container2">
+      <div class="range-subtitle">
+        <h2 class="special-font">Confira alguns de nossos artesanatos</h2>
       </div>
-      <div class="carrossel" data-glide-el="track">
-        <div data-glide-el="track">
-          <ul class="glide__slides carrossel-container">
-            <li class="glide__slide"><img src="images/imgs-produtos/AmigurumiCapivara.jpg" alt="Imagem de crochê 1"></li>
-            <li class="glide__slide"><img src="images/imgs-produtos/bagBaguete.jpg" alt="Imagem de crochê 2"></li>
+      <div class="glide carrossel">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="images/imgs-produtos/AmigurumiCapivara.jpg" alt=""></li>
+            <li class="glide__slide"><img src="images/imgs-produtos/bagBaguete.jpg" alt=""></li>
             <li class="glide__slide"><img src="images/imgs-produtos/bagBoho.jpg" alt="Imagem de crochê 3"></li>
             <li class="glide__slide"><img src="images/imgs-produtos/capaKindle.jpg" alt="Imagem de crochê 5"></li>
             <li class="glide__slide"><img src="images/imgs-produtos/chaveiroFlor.jpg" alt="Imagem de crochê 6"></li>
@@ -109,14 +168,15 @@
           </ul>
         </div>
       </div>
+      </div>
       <button class="call-of-action"><a href="produtos.html">Ver mais</a></button>
     </section>
   </main>
   <footer id="contato">
     <div class="container">
-      <div class="informacoes">
-        <div class="informacoes-contatos">
-          <h4>By <span class="fonte-especial">Helena Pires</span></h4>
+      <div class="information">
+        <div class="information-contact">
+          <h4>By <span class="special-font">Helena Pires</span></h4>
           <ul class="contatos-lista">
             <li>
               <a href="https://www.instagram.com/nenacrochebr/" target="_blank" title="Visite nosso perfil no Instagram🐱"><i class="fa-brands fa-instagram"></i> nenacrochebr</a>
@@ -127,50 +187,49 @@
           </ul>
         </div>
         <div>
-          <div class="informacoes-site">
-            <h4 class="institucional-subtitulo">INSTITUCIONAL</h4>
+          <div class="information-site">
+            <h3 class="institucional-subtitle">INSTITUCIONAL</h3>
             <div class="infors">
-              <div class="container-institucional-titulo">
-                <h1>INSTITUCIONAL</h1>
-                <button onclick="institucionalButton()">X</button>
+              <div class="container-subtitle">
+                <h2 class="subtitle">INSTITUCIONAL</h2>
+                <button class="button-for-hidden" onclick="popupButton()">X</button>
               </div>
-              <div class="privacidade">
-                <h2>Política de Privacidade</h2>
+              <div class="privacity">
+                <h3>Política de Privacidade</h3>
                 <p>A sua privacidade é importante para nós. No momento, este site não recolhe informações pessoais, como nome, e-mail ou dados de navegação. Não utilizamos cookies de rastreamento.</p>
               </div>
-              <div class="troca">
-                <h2>Política de Troca/Devolução</h2>
+              <div class="policy-replace">
+                <h3>Política de Troca/Devolução</h3>
                 <p>As peças artesanais Nena Crochê são feitas sob medida e encomenda, não é possível fazer trocas ou devoluções[Podemos fazer o reajuste da peça caso ela tenha ficado pequena ou grande demais].</p>
               </div>
-              <div class="reservados">
-                <h2>Direitos Reservados</h2>
+              <div class="reserved">
+                <h3>Direitos Reservados</h3>
                 <p>© - O conteúdo deste site, incluindo imagens, textos e designs, é protegido por direitos de autor. A sua reprodução, total ou parcial, sem autorização prévia, é proibida.</p>
               </div>
             </div>
           </div>
-          <div class="informacoes-pagamento">
-            <h4>FORMAS DE PAGAMENTO</h4>
-            <ul class="list-pagamentos">
-              <li><i class="fa-regular fa-credit-card"></i> CRÉDITO</li>
-              <li><i class="fa-brands fa-pix"></i> PIX</li>
+          <div class="information-payments">
+            <h3>FORMAS DE PAGAMENTO</h3>
+            <ul class="list-payments">
+              <li class="list-payments-item"><i class="fa-regular fa-credit-card"></i> CRÉDITO</li>
+              <li class="list-payments-item"><i class="fa-brands fa-pix"></i> PIX</li>
             </ul>
           </div>
         </div>
-        <div class="footer-imagem-logo">
-          <img class="logo-footer" src="images/logo2.png" alt="logo Nena Crochê">
+        <div class="footer-image-logo">
+          <img class="logo-footer" src="images/logo2.png" alt="Logo Nena Crochê">
         </div>
       </div>
     </div>
     </div>
     <div class="text-rodape-bottom">
       <div class="container">
-        <p class="paragrafo_natal-rn"><a class="link_natal-rn" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - Rio Grande do Norte</a></p>
-        <p class="paragrafo_natal-rn-responsivo"><a class="link_natal-rn-responsivo" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - RN</a></p>
+        <p class="paragraph-natal-rn"><a class="link-natal-rn" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - Rio Grande do Norte</a></p>
+        <p class="paragraph-natal-rn-responsivo"><a class="link-natal-rn-responsivo" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - RN</a></p>
         <p><a target="_blank" href="https://github.com/Sarathamyres">&copy; 2025 - by ST</a></p>
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
   <script src="app.js" defer></script>
 </body>
 

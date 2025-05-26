@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="css/responsivo.css">
   <link rel="stylesheet" href="css/style-global.css">
   <link rel="stylesheet" href="css/produtos.css">
-  <link rel="stylesheet" href="css/institucional.css">
+  <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/menu-hamburguer.css">
-
   <link rel="icon" type="image/png" href="images/favicon.ico">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Nena Crochê | Peças Artesanais </title>
 </head>
 
@@ -26,14 +26,19 @@
       <div class="logo">
         <a href="index.html">
           <img src="images/logo1.png" alt="">
-          <h1 class="fonte-especial">Nena Crochê</h1>
+          <h1 class="special-font">Nena Crochê</h1>
         </a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="sobre.html">SOBRE</a></li>
-          <li><a href="produtos.html">PRODUTOS</a></li>
-          <li><a href="#contato">CONTATO</a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="sobre.html">SOBRE</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="produtos.html">PRODUTOS</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#contato">CONTATO</a>
           </li>
         </ul>
         <button class="hamburger hamburger--collapse" type="button">
@@ -44,35 +49,36 @@
       </nav>
     </div>
   </header>
-  <article class="menu-hamburguer">
+  <nav class="menu-hamburguer">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="sobre.html">SOBRE</a></li>
-          <li><a href="produtos.html">PRODUTOS</a></li>
-          <li><a href="#contato">CONTATO</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="sobre.html">SOBRE</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="produtos.html">PRODUTOS</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#contato">CONTATO</a>
+        </li>
+      </ul>
     </div>
-  </article>
+  </nav>
   <nav class="nav-produtos">
     <input type="radio" name="radio" id="tops" value="tops" checked>
     <label for="tops">BLUSINHAS</label>
-
     <input type="radio" name="radio" id="bags" value="bags">
     <label for="bags">BAGS</label>
-
     <input type="radio" name="radio" id="acessorios" value="acessorios">
     <label for="acessorios">ACESSÓRIOS</label>
   </nav>
   <main>
     <section class="icons-fixed">
-      <a class="icon-fixed-item" href="tel:+55 84 8856-3163" target="_blank">
+      <a class="icon-fixed-item phone-number" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20eu%20do%20site%20Nena%20peça%20de%20crochê:%20☺️" target="_blank">
         <i class="fa-brands fa-whatsapp fa-rotate-270"></i>
         <p>Fale conosco! 🐱🧶</p>
       </a>
-      <a class="icon-fixed-item" href="https://br.pinterest.com/search/pins/?q=croche&rs=typed" target="_blank">
+      <a class="icon-fixed-item pinterest" href="https://br.pinterest.com/search/pins/?q=croche&rs=typed" target="_blank">
         <i class="fa-brands fa-pinterest-p"></i>
         <p>Não achou a peça que procura? Dá uma olhadinha no Pinterest!🐱🧶</p>
       </a>
@@ -82,7 +88,9 @@
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/topFranjinha.jpg" alt="Top com Franjinha feita à Crochê em Natal Rio Grande do Norte">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20TOP FRANJA🧶">Quero essa peça!</a>
+            <button>
+              <a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20TOP FRANJA🧶">Quero essa peça!
+              </a>
             </button>
           </figcaption>
           <h2>Top Franja</h2>
@@ -90,14 +98,14 @@
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/topMare.jpg" alt="@nenacrochebr usando o Top Maré, blusinha feita de crocê na cor vinho - Natal RN">
           <figcaption>
-            <button><a class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê%20:TOP MARÉ🧶." target="_blank">Quero essa peça!</a></button>
+            <button><a class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê%20:TOP MARÉ🧶." target="_blank">Quero essa peça!</a></button>
           </figcaption>
           <h2>Top Maré</h2>
         </figure>
         <figure class="figureProdutos">
           <img class="marisol" src="images/imgs-produtos/topMarisol.jpg" alt="Top topMarisol, blusinha feita de crocê na cor verde - Natal RN">
           <figcaption>
-            <button><a class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20TOP MARISOL🧶" target="_blank">Quero essa peça!</a></button>
+            <button><a class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20TOP MARISOL🧶" target="_blank">Quero essa peça!</a></button>
           </figcaption>
           <h2>Top Marisol</h2>
         </figure>
@@ -106,28 +114,28 @@
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/bagBaguete.jpg" alt="Bag/Bolsa de Crochê na cor marrom, feita em Natal - RN ">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20BAG BAGUETE🧶">Quero essa peça!</a></button>
+            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20BAG BAGUETE🧶">Quero essa peça!</a></button>
           </figcaption>
           <h2>Bag Baguete</h2>
         </figure>
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/bagEstrela.jpg" alt="Bag de Crochê em formato de estrela, cor azul e branco">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20BAG ESTRELA">Quero essa peça!</a></button>
+            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20BAG ESTRELA🧶">Quero essa peça!</a></button>
           </figcaption>
           <h2>Bag Estrela</h2>
         </figure>
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/bagBoho.jpg" alt="Bag de crochê, estilo Boho em Natal RN">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20BAG BOHO" target="_blank">Quero essa peça!</a></button>
+            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20BAG BOHO🧶" target="_blank">Quero essa peça!</a></button>
           </figcaption>
           <h2>Bag Boho</h2>
         </figure>
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/capaKindle.jpg" alt="Capinha para kindle feita de crochê em Natal RN">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20CAPINHA KINDLE" target="_blank">Quero essa peça!</a></button>
+            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20CAPINHA KINDLE🧶" target="_blank">Quero essa peça!</a></button>
           </figcaption>
           <h2>Capa Kindle</h2>
         </figure>
@@ -136,25 +144,25 @@
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/AmigurumiCapivara.jpg" alt="Chaveiro Amigurumi Capivara - Artesanato, acessório, lembrancinhas Natal RN">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20Amigurumi Capivara - Chaveirinho🧶" target="_blank">Quero essa peça!</a></button>
+            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê:%20Amigurumi Capivara - Chaveirinho🧶" target="_blank">Quero essa peça!</a></button>
           </figcaption>
           <h2>Amigurumi Capivara</h2>
         </figure>
         <figure class="figureProdutos">
           <img src="images/imgs-produtos/chaveiroFlor.jpg" alt="Chaveiro flor de Crochê - Artesanato, acessório, lembrancinhas Natal RN">
           <figcaption>
-            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558499414147&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê%20Chaveiro Flor🧶" target="_blank">Quero essa peça!</a></button>
+            <button><a target="_blank" class="iconProdutos" href="https://api.whatsapp.com/send?phone=558488563163&text=Olá!%20Gostaria%20de%20encomendar%20essa%20peça%20de%20crochê%20Chaveiro Flor🧶" target="_blank">Quero essa peça!</a></button>
           </figcaption>
           <h2>Chaveiro flor</h2>
         </figure>
       </div>
     </div>
   </main>
- <footer id="contato">
+  <footer id="contato">
     <div class="container">
-      <div class="informacoes">
-        <div class="informacoes-contatos">
-          <h4>By <span class="fonte-especial">Helena Pires</span></h4>
+      <div class="information">
+        <div class="information-contact">
+          <h4>By <span class="special-font">Helena Pires</span></h4>
           <ul class="contatos-lista">
             <li>
               <a href="https://www.instagram.com/nenacrochebr/" target="_blank" title="Visite nosso perfil no Instagram🐱"><i class="fa-brands fa-instagram"></i> nenacrochebr</a>
@@ -165,45 +173,45 @@
           </ul>
         </div>
         <div>
-          <div class="informacoes-site">
-            <h4 class="institucional-subtitulo">INSTITUCIONAL</h4>
+          <div class="information-site">
+            <h3 class="institucional-subtitle">INSTITUCIONAL</h3>
             <div class="infors">
-              <div class="container-institucional-titulo">
-                <h1>INSTITUCIONAL</h1>
-                <button onclick="institucionalButton()">X</button>
+              <div class="container-subtitle">
+                <h2 class="subtitle">INSTITUCIONAL</h2>
+                <button class="button-for-hidden" onclick="popupButton()">X</button>
               </div>
-              <div class="privacidade">
-                <h2>Política de Privacidade</h2>
+              <div class="privacity">
+                <h3>Política de Privacidade</h3>
                 <p>A sua privacidade é importante para nós. No momento, este site não recolhe informações pessoais, como nome, e-mail ou dados de navegação. Não utilizamos cookies de rastreamento.</p>
               </div>
-              <div class="troca">
-                <h2>Política de Troca/Devolução</h2>
+              <div class="policy-replace">
+                <h3>Política de Troca/Devolução</h3>
                 <p>As peças artesanais Nena Crochê são feitas sob medida e encomenda, não é possível fazer trocas ou devoluções[Podemos fazer o reajuste da peça caso ela tenha ficado pequena ou grande demais].</p>
               </div>
-              <div class="reservados">
-                <h2>Direitos Reservados</h2>
+              <div class="reserved">
+                <h3>Direitos Reservados</h3>
                 <p>© - O conteúdo deste site, incluindo imagens, textos e designs, é protegido por direitos de autor. A sua reprodução, total ou parcial, sem autorização prévia, é proibida.</p>
               </div>
             </div>
           </div>
-          <div class="informacoes-pagamento">
-            <h4>FORMAS DE PAGAMENTO</h4>
-            <ul class="list-pagamentos">
-              <li><i class="fa-regular fa-credit-card"></i> CRÉDITO</li>
-              <li><i class="fa-brands fa-pix"></i> PIX</li>
+          <div class="information-payments">
+            <h3>FORMAS DE PAGAMENTO</h3>
+            <ul class="list-payments">
+              <li class="list-payments-item"><i class="fa-regular fa-credit-card"></i> CRÉDITO</li>
+              <li class="list-payments-item"><i class="fa-brands fa-pix"></i> PIX</li>
             </ul>
           </div>
         </div>
-         <div class="footer-imagem-logo">
-        <img class="logo-footer" src="images/logo2.png" alt="logo Nena Crochê">
-    </div>
+        <div class="footer-image-logo">
+          <img class="logo-footer" src="images/logo2.png" alt="Logo Nena Crochê">
+        </div>
       </div>
     </div>
     </div>
     <div class="text-rodape-bottom">
       <div class="container">
-        <p class="paragrafo_natal-rn"><a class="link_natal-rn" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - Rio Grande do Norte</a></p>
-        <p class="paragrafo_natal-rn-responsivo"><a class="link_natal-rn-responsivo" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - RN</a></p>
+        <p class="paragraph-natal-rn"><a class="link-natal-rn" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - Rio Grande do Norte</a></p>
+        <p class="paragraph-natal-rn-responsivo"><a class="link-natal-rn-responsivo" target="_blank" href="https://maps.app.goo.gl/5zzegvvZ397YCx5N9">Natal - RN</a></p>
         <p><a target="_blank" href="https://github.com/Sarathamyres">&copy; 2025 - by ST</a></p>
       </div>
     </div>

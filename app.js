@@ -4,19 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
     startAt: 0,
     perView: 4,
     autoplay: 2000,
-    hoverpause: true,
+    hoverpause: false,
+    rewind: true,
     animationDuration: 800,
+    gap: 20,
     breakpoints: {
-      400: {
-        perView: 1,
-      },
-      768: {
-        perView: 2,
-      },
+      768: { perView: 2 },
+      500: { perView: 1 },
     },
   }).mount();
 });
-
 const hamburguer = document.querySelector(".hamburger");
 const menuHamburguer = document.querySelector(".menu-hamburguer");
 
@@ -29,15 +26,26 @@ hamburguer.addEventListener("click", () => {
   toggleMenu();
 });
 
-const informacoesSite = document.querySelector(".informacoes-site h4");
+const informationSite = document.querySelector(".information-site h3");
 const inforsContainer = document.querySelector(".infors");
+const inforsCompra = document.querySelector(".infors-compra");
+const buttonHelp = document.querySelectorAll(".buttonHelp");
 
-informacoesSite.addEventListener("click", () => {
+informationSite.addEventListener("click", () => {
   inforsContainer.style.display = "block";
 });
- function institucionalButton() {
-        inforsContainer.style.display = "none";
-    }
+buttonHelp.forEach((button) => {
+  button.addEventListener("click", () => {
+    inforsCompra.style.display = "block";
+    hamburguer.classList.remove("is-active");
+    toggleMenu();
+  });
+});
+
+function popupButton() {
+  inforsContainer.style.display = "none";
+  inforsCompra.style.display = "none";
+}
 
 window.addEventListener("scroll", () => {
   const iconFixed = document.querySelector(".icons-fixed");
@@ -72,3 +80,44 @@ radioS.forEach((radio) => {
 document
   .querySelector(".nav-produtos input:checked")
   ?.dispatchEvent(new Event("change"));
+
+  ScrollReveal().reveal(".hero-container", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".card", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".img-main", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".button-cta", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".carrossel", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".profile", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".about-me button", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".tops", {
+  origin: "left",
+  duration: 3000,
+  distance: "20%",
+});

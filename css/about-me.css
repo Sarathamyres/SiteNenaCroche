@@ -1,13 +1,16 @@
-/*main {
-  background-color: var(--beige);
-}*/
-.sobre-mim img {
-  max-width: 30%;
-  border-radius: 24px;
+.about-me {
+  height: auto;
+  padding: 20px 40px;
 }
-.sobre-mim .container {
+.profile {
+  max-width: 30%;
+  max-height: 500px;
+  border-radius: 24px;
+  box-shadow: rgb(71, 71, 71) -3px 5px 5px -3px;
+}
+.about-me .container {
   display: flex;
-  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
   text-align: justify;
@@ -15,31 +18,37 @@
   align-items: center;
   gap: 50px;
 }
-.sobre-mim .sobre-mim-texto {
+.about-me-text {
   max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: var(--tauper-gray);
+  font-family: cursive;
+  line-height: 35px;
   margin: 0 20px;
 }
-.sobre-mim-texto button {
+.about-me-text button {
   color: var(--beige);
   background-color: var(--light-blue);
   margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgb(71, 71, 71) -3px 5px 5px -3px;
 }
-.sobre-mim-texto button a {
+.about-me-text button a {
   color: inherit;
   text-decoration: none;
 }
-.sobre-mim span {
+.about-me-text span {
   color: var(--light-blue);
   font-weight: 700;
   font-size: 16px;
 }
-.sobre-mim-texto a {
+.about-me-text a {
   text-decoration: underline;
   color: var(--light-blue);
 }
-.sobre-mim-texto a:hover {
+.about-me-text a:hover {
   opacity: 0.8;
 }

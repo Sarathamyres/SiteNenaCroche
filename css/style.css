@@ -136,7 +136,6 @@ main .container .range-subtitle {
   max-width: 300px !important;
   max-height: 400px;
   flex-shrink: 0;
-  background-color: rebeccapurple;
   display: flex;
   align-items: center;
   justify-content: center;

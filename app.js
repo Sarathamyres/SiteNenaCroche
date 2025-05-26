@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hoverpause: false,
     rewind: true,
     animationDuration: 800,
-    gap: 0,
+    gap: 20,
     breakpoints: {
       768: { perView: 2 },
       500: { perView: 1 },

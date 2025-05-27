@@ -39,16 +39,22 @@ body {
   z-index: 2;
   left: 20px;
   bottom: 50px;
-  font-family: "Poppins";
   color: var(--dark-blue);
 }
 .icons-fixed i {
-  font-size: 40px;
-  background-color: var(--beige);
+  font-size: 45px;
   padding: 1px 2px;
   border-radius: 5px;
 }
-.icons-fixed p {
+/* #icons-fixed Apenas icones do index.html*/
+#icons-fixed i {
+  background-color: var(--beige);
+}
+#icons-fixed .pinterest i {
+  border-radius: 100%;
+}
+.phone-number .paragraph-phone-number,
+.pinterest .paragraph-pinterest {
   display: none;
   background-color: var(--beige);
   border-radius: 5px;
@@ -60,8 +66,9 @@ body {
   gap: 10px;
   align-items: center;
 }
-.icon-fixed-item:hover p {
-  display: block;
+.phone-number:hover .paragraph-phone-number,
+.pinterest:hover .paragraph-pinterest {
+  display: flex;
 }
 header {
   position: absolute;
@@ -97,11 +104,13 @@ header .menu {
   align-items: center;
   margin: auto;
   gap: 20px;
+}
+.container .menu .link-menu-list-item {
   font-size: 20px;
   color: var(--beige);
   font-weight: 300;
 }
-.container .menu-list .menu-list-item:hover {
+.container .menu-list .link-menu-list-item:hover {
   font-weight: 500;
 }
 .button-help,

@@ -12,9 +12,9 @@
 }
 main .container {
   display: flex;
+  background: url("../images/banner1.png") center/cover fixed;
 }
 main .container1 {
-  background: url("../images/banner1.png") center/cover fixed;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: justify;
@@ -92,12 +92,13 @@ main .special-font {
 main .button-cta /*div*/ {
   display: flex;
   justify-content: center;
-  max-width: calc(600px + 30px);
+  max-width: 600px;
+  min-width: 300px;
   border-radius: 10px;
   margin: 10px 0;
 }
 main .link-button-cta {
-  max-width: 500px;
+  max-width: 100%;
   box-shadow: rgb(71, 71, 71) 0px 5px 20px 0px;
   border-radius: 10px;
 }
@@ -109,7 +110,6 @@ main p {
   font-weight: 200;
 }
 main .container2 {
-  background: url("../images/banner1.png") center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -128,25 +128,6 @@ main .container .range-subtitle {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   z-index: 1;
   background-color: #eeeeef;
-}
-.carrossel {
-  width: 90%;
-}
-.glide__slide {
-  max-width: 300px !important;
-  max-height: 400px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.glide__slide img {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
 }
 main .call-of-action {
   text-align: center;

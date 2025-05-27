@@ -10,14 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d4deb6b8e7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style-global.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
   <link href="dist/hamburgers.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carrossel.css">
   <link rel="stylesheet" href="css/responsivo.css">
   <link rel="stylesheet" href="css/menu-hamburguer.css">
   <link rel="icon" type="image/png" href="images/favicon.ico">
   <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <title>Nena Crochê | Peças Artesanais </title>
 </head>
@@ -26,7 +27,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <a href="index.html">
+        <a class="link-logo" href="index.html">
           <img src="images/logo1.png" alt="">
           <h1 class="special-font titulo">Nena Crochê</h1>
         </a>
@@ -34,13 +35,13 @@
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
-            <a href="sobre.html">SOBRE</a>
+            <a class="link-menu-list-item" href="sobre.html">SOBRE</a>
           </li>
           <li class="menu-list-item">
-            <a href="produtos.html">PRODUTOS</a>
+            <a class="link-menu-list-item" href="produtos.html">PRODUTOS</a>
           </li>
           <li class="menu-list-item">
-            <a href="#contato">CONTATO</a>
+            <a class="link-menu-list-item" href="#contato">CONTATO</a>
           </li>
         </ul>
         <button class="button-help buttonHelp">Quero comprar, como faço?
@@ -60,13 +61,13 @@
     <div class="container">
       <ul class="menu-list">
         <li class="menu-list-item">
-          <a href="sobre.html">SOBRE</a>
+          <a class="link-menu-list-item" href="sobre.html">SOBRE</a>
         </li>
         <li class="menu-list-item">
-          <a href="produtos.html">PRODUTOS</a>
+          <a class="link-menu-list-item" href="produtos.html">PRODUTOS</a>
         </li>
         <li class="menu-list-item">
-          <a href="#contato">CONTATO</a>
+          <a class="link-menu-list-item" href="#contato">CONTATO</a>
         </li>
       </ul>
       <button class="button-help buttonHelp">Quero comprar, como faço?</button>
@@ -104,15 +105,15 @@
     </dl>
     </div>
   </section>
-  <main>
-    <section class="icons-fixed">
+  <main class="main">
+    <section id="icons-fixed" class="icons-fixed">
       <a class="icon-fixed-item phone-number" href="tel:+55 84 8856-3163" target="_blank">
-        <i class="fa-brands fa-whatsapp fa-rotate-270"></i>
-        <p>Fale conosco! 🐱🧶</p>
+        <i class="fa-brands fa-square-whatsapp fa-rotate-270" style="color:#25D366;"></i>
+        <p class="paragraph-phone-number">Fale conosco! 🐱🧶</p>
       </a>
-      <a class="icon-fixed-item pinterest" href="https://br.pinterest.com/search/pins/?q=croche&rs=typed" target="_blank">
-        <i class="fa-brands fa-pinterest-p"></i>
-        <p>Não achou a peça que procura? Dá uma olhadinha no Pinterest!🐱🧶</p>
+      <a class="icon-fixed-item pinterest" href="https://pin.it/3flid6ai7" target="_blank">
+        <i class="fa-brands fa-pinterest" style="color:#FF0000;"></i>
+        <p class="paragraph-pinterest">Não achou o que procura?<br>Dê uma olhadinha no Pinterest!🐱🧶</p>
       </a>
     </section>
     <section class="container container1">
@@ -124,7 +125,7 @@
             </p>
           </div>
           <div class="card card-two">
-            <h3 class="subtitle-card-two">Por que Comprar Conosco?</h3>
+            <h3 class="subtitle-card-two">Por que comprar conosco?</h3>
             <div class="box shipping">
               <div class="div-icon">
                 <i class="fa-solid fa-truck"></i>
@@ -156,20 +157,17 @@
       <div class="range-subtitle">
         <h2 class="special-font">Confira alguns de nossos artesanatos</h2>
       </div>
-      <div class="glide carrossel">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="images/imgs-produtos/AmigurumiCapivara.jpg" alt="Chaveiro Amigurumi Capivara"></li>
-            <li class="glide__slide"><img src="images/imgs-produtos/bagBaguete.jpg" alt="Bolsa Baguete feita em Crochê NAtal - RN"></li>
-            <li class="glide__slide"><img src="images/imgs-produtos/bagBoho.jpg" alt="Bolsa estilo Boho feita em Croche pela @nenacrochebr"></li>
-            <li class="glide__slide"><img src="images/imgs-produtos/capaKindle.jpg" alt="Capa kindle artesanal em crochê"></li>
-            <li class="glide__slide"><img src="images/imgs-produtos/chaveiroFlor.jpg" alt="Imagem de crochê 6"></li>
-            <li class="glide__slide"><img src="images/imgs-produtos/topFranjinha.jpg" alt="Top franjinha em Crochê Natal Rio Grande do Norte"></li>
-          </ul>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/imgs-produtos/AmigurumiCapivara.jpg" alt="Amigurumi Capivara - @nenacrochebr"></div>
+          <div class="swiper-slide"><img src="images/imgs-produtos/bagBaguete.jpg" alt="Bolsa Baguete feita em Crochê - Natal-RN"></div>
+          <div class="swiper-slide"><img src="images/imgs-produtos/bagBoho.jpg" alt="Bolsa estilo boho feita Artesanal"></div>
+          <div class="swiper-slide"><img src="images/imgs-produtos/chaveiroFlor.jpg" alt="Chaveiro Flor de Croche em Natal-rn"></div>
+          <div class="swiper-slide"><img src="images/imgs-produtos/topFranjinha.jpg" alt="Top franjinha de Crochê"></div>
+          <div class="swiper-slide"><img src="images/imgs-produtos/capaKindle.jpg" alt="Capa para Kindle feita em Crochê pela nenacrochebr"></div>
         </div>
       </div>
-      </div>
+
       <button class="call-of-action"><a href="produtos.html">Ver mais</a></button>
     </section>
   </main>
@@ -184,6 +182,9 @@
             </li>
             <li>
               <a href="tel:+55 84 8856-3163" target="_blank" title="Precisa de um help? Chama a gente no Whatsapp🐱"><i class="fa-brands fa-whatsapp"></i> Nos contate</a>
+            </li>
+            <li>
+              <a href="https://pin.it/3flid6ai7" target="_blank" title="Precisa de uma inspiração?🌟"><i class="fa-brands fa-pinterest"></i> nenacrochebr</a>
             </li>
           </ul>
         </div>
@@ -231,6 +232,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="app.js" defer></script>
 </body>
 

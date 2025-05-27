@@ -57,6 +57,11 @@ header .container nav .hamburger {
     min-width: 300px;
   }
 }
+@media (max-width: 628px) {
+  main .button-cta /*div*/ {
+    max-width: 400px;
+  }
+}
 @media (max-width: 460px) {
   .about-me img {
     max-width: 50%;
@@ -75,9 +80,15 @@ header .container nav .hamburger {
   .paragraph-natal-rn {
     display: none;
   }
+  main .button-cta /*div*/ {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 320px) {
   header .logo h1 {
     display: none;
+  }
+  main .button-cta /*div*/ {
+    padding: 0 5px;
   }
 }

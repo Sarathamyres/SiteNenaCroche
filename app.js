@@ -1,19 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  new Glide(".carrossel", {
-    type: "carousel",
-    startAt: 0,
-    perView: 4,
-    autoplay: 2000,
-    hoverpause: false,
-    rewind: true,
-    animationDuration: 800,
-    gap: 20,
-    breakpoints: {
-      768: { perView: 2 },
-      500: { perView: 1 },
-    },
-  }).mount();
-});
 const hamburguer = document.querySelector(".hamburger");
 const menuHamburguer = document.querySelector(".menu-hamburguer");
 
@@ -46,13 +30,14 @@ function popupButton() {
   inforsContainer.style.display = "none";
   inforsCompra.style.display = "none";
 }
-
 window.addEventListener("scroll", () => {
-  const iconFixed = document.querySelector(".icons-fixed");
-  if (window.scrollY <= 2) {
-    iconFixed.style.display = "none";
-  } else {
+  const iconFixed = document.querySelector("#icons-fixed");
+  const main = document.querySelector("main");
+  const mainAltura = main.scrollHeight;
+  if (window.scrollY >= 2 && window.scrollY < mainAltura) {
     iconFixed.style.display = "flex";
+  } else {
+    iconFixed.style.display = "none";
   }
   if (window.scrollY > 0 && hamburguer.classList.contains("is-active")) {
     hamburguer.classList.remove("is-active");
@@ -60,15 +45,49 @@ window.addEventListener("scroll", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      501: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      884: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1100: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1320: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+});
 const radioS = document.querySelectorAll(".nav-produtos input");
 const produtos = document.querySelectorAll(".produtos-container .produtos");
-
 radioS.forEach((radio) => {
   radio.addEventListener("change", function () {
     const valueCheck = this.value;
     produtos.forEach((produto) => {
       const valueProd = produto.dataset.categoria;
-
       if (valueCheck === valueProd) {
         produto.style.display = "flex";
       } else {

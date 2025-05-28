@@ -1,7 +1,17 @@
-.icons-fixed-produtos{
-  display: flex;
-  top: 50%;
-  height: 130px;
+@media (min-width: 628px) {
+  .icons-fixed-produtos {
+    display: flex;
+    top: 50%;
+    height: 130px;
+  }
+}
+@media (max-width: 628px) {
+  .icons-fixed-produtos {
+    display: flex;
+    top: 50%;
+    left: 85%;
+    height: 150px;
+  }
 }
 .nav-produtos {
   display: flex;
@@ -74,11 +84,11 @@ figcaption button {
   cursor: pointer;
   padding: 10px;
 }
-figcaption button a{
+figcaption button a {
   padding: 12px;
 }
 figcaption button a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .figureProdutos:hover {
   opacity: 0.8;

@@ -24,7 +24,7 @@
   flex-direction: column;
   justify-content: space-around;
   color: var(--tauper-gray);
-  font-family: cursive;
+  font-family: cursive, Cambria, Cochin;
   line-height: 35px;
   margin: 0 20px;
 }
@@ -32,7 +32,8 @@
   color: var(--beige);
   background-color: var(--light-blue);
   margin: 10px 0;
-  border: none;
+  padding: 10px;
+  border: 1px solid var(--beige);
   border-radius: 10px;
   box-shadow: rgb(71, 71, 71) -3px 5px 5px -3px;
 }

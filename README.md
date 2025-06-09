@@ -37,7 +37,7 @@ Acesse o repositório desse site no Github: **[Repositório Github](https://gith
 
 
 ## 📄 Licença  
-© 2025 **[Thamyres de Santana](https://github.com/Sarathamyres/)**..  
+© 2025 **[Thamyres de Santana](https://github.com/Sarathamyres/)**.
 Este projeto está licenciado sob a **MIT License**.  
      
 

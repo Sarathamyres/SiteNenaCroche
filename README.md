@@ -9,10 +9,10 @@
 
 # 🌟 FUNCIONALIDADES
 
-## Página Inicial - Apresentação da marca e chamada para ação e contatos
-## Página Sobre - Detalhes sobre a história da loja e sua criadora
-## Pagina Produtos - Vitrine com os produtos em Crochê
-## Design Responsivo
+    • Página Inicial - Apresentação da marca e chamada para ação e contatos
+    • Página Sobre - Detalhes sobre a história da loja e sua criadora
+    • Pagina Produtos - Vitrine com os produtos em Crochê
+    • Design Responsivo
 
 # 🛠 TECNOLOGIAS UTILIZADAS
 

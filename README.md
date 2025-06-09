@@ -1,6 +1,6 @@
 # LOJA DE ARTESANATO ONLINE
 
-## Este é um trabalho real desenvolvido como atividade de conclusão do módulo Frontend I do curso de FullStack DevMedia. O projeto consiste em uma landing page dinâmica para uma loja online de artesanato especializada em crochê, onde os visitantes podem:
+## Este é um trabalho real desenvolvido como atividade de conclusão do módulo Frontend I do curso de FullStack no DevMedia. O projeto consiste em uma landing page dinâmica para uma loja online de artesanato especializada em crochê, onde os visitantes podem:
 
     • Conhecer a história da loja
     • Entender como funciona as encomendas
@@ -9,7 +9,7 @@
 
 # 🌟 FUNCIONALIDADES
 
-    • Página Inicial - Apresentação da marca e chamada para ação e contatos
+    • Página Inicial - Apresentação da marca, chamada para ação e contatos
     • Página Sobre - Detalhes sobre a história da loja e sua criadora
     • Pagina Produtos - Vitrine com os produtos em Crochê
     • Design Responsivo
@@ -33,7 +33,7 @@
 O site está hospedado na Vercel: **[Nena Crochê Online](https://nenacroche.vercel.app/)**.  
      
 ## 💻 Acesso ao Repositório  
-O acesse o repositório desse site no Github: **[Repositório Github](https://github.com/Sarathamyres/SiteNenaCroche/)**.  
+Acesse o repositório desse site no Github: **[Repositório Github](https://github.com/Sarathamyres/SiteNenaCroche/)**.  
 
 
 ## 📄 Licença  
